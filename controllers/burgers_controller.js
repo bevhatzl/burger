@@ -17,12 +17,7 @@ router.get("/", function (req, res) {
 });
 
 router.post("/api/burgers", function (req, res) {
-    let isEaten;
-    if (req.body.devoured === 0) {
-        isEaten = false;
-    } else {
-        isEaten = true;
-    }
+    let isEaten = false;
     burger.insertOne([
         "burger_name", "devoured"
     ], [
@@ -38,6 +33,8 @@ router.put("/api/burgers/:id", function (req, res) {
     var condition = "id = " + req.params.id;
 
     console.log("condition", condition);
+
+    con
 
     burger.updateOne({
         devoured: req.body.devoured
