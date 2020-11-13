@@ -6,8 +6,9 @@
     {{#each burgers}}
     {{#unless devoured}}
     {{!-- {{devoured=false}} --}}
-    {{burger_name}}
-
+    <li>
+        {{burger_name}}
+    </li>
     <button class="change-eat" data-id="{{id}}" data-devour="false">
         Devour
     </button>
