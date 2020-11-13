@@ -1,0 +1,19 @@
+body {
+    background-color: yellow;
+}
+
+.container {
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.burger-lists {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none
+}
