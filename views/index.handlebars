@@ -2,42 +2,44 @@
 
     <img src="../public/assets/img/burger.png" alt="image of burger">
 
-    <h2>Eat Da Burger</h2>
+    <h1>Eat Da Burger</h1>
 
     <div class="burger-lists">
-        <ul>
-            {{#each burgers}}
-            {{#unless devoured}}
-            {{!-- {{devoured=false}} --}}
-            <li>
-                {{burger_name}}
-            </li>
-            <button class="change-eat" data-id="{{id}}" data-devour="false">
-                Devour
-            </button>
-
-
-            {{!-- <input type="button" name="devoured" value="Devour It"> </div> --}}
-
-            {{!-- <button class="change-sleep" data-id="{{id}}" data-newsleep="{{sleep}}">
-        {{#if sleep}}SLEEP TIME!{{else}}WAKE UP!{{/if}}
-    </button> --}}
-            {{/unless}}
-            {{/each}}
-        </ul>
-        <div>
-            <h2>Burgers eaten</h2>
-
-            <ul>
+        <div class="new-burgers">
+            <ul class="new-burger-list">
                 {{#each burgers}}
-                {{#if devoured}}
-                {{!-- {{devoured=true}} --}}
-                <li>{{burger_name}}</li>
-                {{/if}}
+                {{#unless devoured}}
+                {{!-- {{devoured=false}} --}}
+                <div class="new-burgers">
+                    <li>
+                        {{burger_name}}
+                    </li>
+                    <button class="change-eat" data-id="{{id}}" data-devour="false">
+                        Devour
+                    </button>
+                </div>
+
+                {{/unless}}
                 {{/each}}
             </ul>
+
+
+
+            <div class="eaten-list">
+                <h2 class="burg-eaten">Burgers eaten</h2>
+
+                <ul>
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    <li>{{burger_name}}</li>
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
         </div>
+
     </div>
+
 
     <h2>Add a Burger</h2>
     <form class="create-form">
@@ -46,10 +48,9 @@
             <label for="burger">Burger Name:</label>
             <input type="text" id="burger" name="burger">
         </div>
-
+        <br>
 
 
         <button type="submit">Add Burger</button>
+        <h4>Enter a burger you want to eat and click Add Burger.</h4>
     </form>
-
-</div>
