@@ -38,12 +38,12 @@ h1, h2, label {
 }
 
 .new-burger-list {
-    margin-right: 10%;
+    margin-right: 5%;
     width: 100%;
 }
 
 .eaten-list {
-    margin-left: 10%;
+    margin-left: 5%;
     width: 100%;
 }
 
@@ -54,4 +54,8 @@ li {
 
 .burg-eaten {
     padding-left: 15px;
+}
+
+.new-item {
+    text-align: right;
 }
