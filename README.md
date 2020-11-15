@@ -1,5 +1,5 @@
 # burger
-This is a site which will allow a user to enter a burger name to add to a list of burgers. The user can then click on a button to eat (devour) a burger and that burger will get moved to the Burgers Eaten list. All actions will update the database. 
+This is a site which will allow a user to enter a burger name to add to a list of burgers. The user can then click on a button to eat (devour) a burger and that burger will get moved to the Burgers Eaten list. All actions will update the database. The site uses expressjs and the front end is created using handlebarsjs.
 
 # Table of Contents
 * [Instructions](#instructions)
@@ -16,6 +16,8 @@ This is a site which will allow a user to enter a burger name to add to a list o
 
 * [VScode] (https://code.visualstudio.com/) 
 * [MySQL] (https://www.mysql.com/)
+* [Handlebars] (https://handlebarsjs.com/)
+* [Express] (https://expressjs.com/)
 
 ## Screenshots
 
