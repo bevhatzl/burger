@@ -8,14 +8,12 @@ body {
 
 .burger-lists {
     display: flex;
-    align-content: center;
     justify-content: center;
 }
 
 ul {
     list-style-type: none;
     margin-top: 5px;
-    margin-bottom: 5px;
 }
 
 .new-burgers {
@@ -34,27 +32,23 @@ h1, h2, label {
 .change-eat {
     margin-left: 5px;
     margin-bottom: 10px;
-    width: 100%;
 }
 
 .new-burger-list {
-    margin-right: 5%;
     width: 100%;
 }
 
 .eaten-list {
-    margin-left: 5%;
     width: 100%;
 }
 
 li {
     min-width: 90%;
-    padding: 10px;
+    padding-bottom: 10px; 
 }
 
 .burg-eaten {
     padding-left: 15px;
-
 }
 
 .new-item {
